@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contato - CGM</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img class="cacula-logo" src="caçula.png" alt="Logo Loot Machine"></h1>
+                        
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Jogos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Nome e sobrenome">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"> 
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                
+                <fieldset>
+                    <legend class="teste" id="teste">Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+
+
+                <label class="checkbox"><input type ="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>                
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section class="mapa">
+                <h3 class="titulo-mapa">Nosso estabelecimento</h3>
+                <p>Nosso estabelecimento está localizado no coração da cidade</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470398.2155276501!2d-43.72617463374161!3d-22.91388505077195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1597093618969!5m2!1spt-BR!2sbr"
+                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            </section>
+        </main>
+
+
+        <footer>
+            <img src="caçula_bw.png" alt="Logo Loot Machine">
+            <p class="copyright"> &copy; Copyright Game Loot Machine - 2020</p>
+        </footer>
+
+    </body>
+</html>

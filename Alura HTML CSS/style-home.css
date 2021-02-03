@@ -1,0 +1,268 @@
+/*Header*/
+
+header{
+    background: #222222;
+    padding: 20px 0;
+}
+
+.cacula-logo{
+    background-color:#1e76be;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 25%;
+    height: 80px;
+}
+
+.caixa{
+    position: relative;
+    width: 1420px;
+    margin: 0 auto;
+}
+
+/*menu nav*/
+nav {
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    display: flex;
+}
+nav li{
+    display: inline-block;
+    margin: 0 200px 0 100px;
+    justify-content: space-between;
+}
+nav a{
+    text-transform: uppercase;
+    color: #999999;
+    /*font: 16px HalisR-bold, Roboto, Arial, sans-serif;*/
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #c78c19;
+    /*text-decoration: underline;*/
+    text-shadow: 2px 2px rgb(129, 6, 6);
+}
+
+
+/*Main*/
+/*Inicio*/
+.inicio{
+    text-align: center;
+    background: url("img/baus_tesouros_all.jpg");
+    padding: 280px 0;
+    position: relative;
+    transition: 2000ms; /*abrindo site*/
+}
+
+#banner{
+    width: 50%;
+}
+
+.principal{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5); /*transparencia escura*/
+    color:#fff;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    line-height: 30px;
+    height: 30%;
+}
+
+.titulo-centralizado{
+    font: 18px Rubik, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+p{
+    text-align: center;
+    font: 18px Rubik, Helvetica, Arial, sans-serif;
+    line-height: 1.5; 
+}
+
+/*p::first-line{
+    font-style: italic;
+}*/
+
+#missao{
+    font-size: 20px;
+}
+
+/*jogos*/
+.jogos{
+    position: relative;
+    background-color: #3b4045;
+}
+
+
+em strong{
+    color: #FF0000;
+}
+
+.titulo-loot{
+    text-align: center;
+    font: 16px HalisR-bold, Roboto, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+    background-color: #325674;
+    width: 100%;
+}
+
+.titulo-loot::first-letter{
+    color: grey;
+}
+
+.titulo-loot::before{
+    content: "[ ";
+}
+.titulo-loot::after{
+    content: " ]";
+}
+
+.loot{
+    background: #3b4045;
+    /*Gradiente -> background: linear-gradient(45deg, #3b4045 50%, #325674 70%)*/
+    /*Gradiente circular -> background: radial-gradient(45deg, #3b4045 50%, #325674 70%)*/
+    width: 940px;
+    margin: 0 auto;
+    padding: 100px;   
+}
+
+.itens{
+    color: /*#1e76be*/ #999999;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2.5;
+    font-size: 16px;
+}
+
+.itens::before{
+    content: " ✭ ";
+    font-size: 18px;
+    color: rgba(255, 230, 0, 0.418);
+}
+
+.itens:nth-child(2n) {
+    font-weight: bold;
+    color: #cecccc;
+}
+
+* { margin: 0; padding: 0; }
+
+/*SLIDES JOGOS*/
+.slider {
+     height: 10px;
+     width: 940px;
+     margin: -250px 200px 250px 250px;
+     opacity: 1;
+}
+    
+.slider li {
+     list-style: none;
+     position: absolute;
+}
+
+.slider img {
+     margin: auto;
+     height: 100%;
+     width: 100%;
+     vertical-align: top;
+     border: 2px solid #1e76be;
+     float: inline-end;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label {
+    background-color: #fff;
+    bottom: 10px;
+    cursor: pointer;
+    display: block; 
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+} 
+
+/*Video*/
+.video{
+    width: 100%;
+}
+
+/*Rodapé*/
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+/* Comandos Importantes */
+
+
+/* Seletor >, para acessar os filhos de determinado elemento
+main > p {
+    background: red;
+}
+
+Seletor ~, para acessar todos os irmãos de determinado elemento
+img ~ p{
+    background: yellow;
+}
+
+Seletor +, para acessar o primeiro irmão de determinado elemento
+img + p{
+    background: blue;
+}
+
+Seletor not, para acessar os elementos, exceto algum.
+.principal p:not(#missao){
+    background: orange;
+}
+
+Como fazer contas com CSS, com a propriedade calc
+width: calc(30% - 10px);
+
+*/
+
