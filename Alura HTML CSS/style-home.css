@@ -28,13 +28,13 @@ nav {
 }
 nav li{
     display: inline-block;
-    margin: 0 200px 0 100px;
+    padding: 0 150px;
+    /*margin: 0 200px 0 100px;*/
     justify-content: space-between;
 }
 nav a{
     text-transform: uppercase;
     color: #999999;
-    /*font: 16px HalisR-bold, Roboto, Arial, sans-serif;*/
     font-family: 'Press Start 2P', cursive;
     font-weight: bold;
     font-size: 20px;
@@ -237,24 +237,45 @@ footer{
     font-family: 'Press Start 2P', cursive;
 }
 
+
 /*adaptando para celular*/
 @media screen and (max-width: 480px){
    .caixa, .principal, .loot, .jogos{
        width: auto;
-   }
+    }
+
+   .caixa{ 
+       width: 90%;
+       height: 10%;
+    }
    
-   h1 {
-       text-align: center;
-   }
+
 
    nav {
-       position: static;
-       display: block;
-   }
+    position: static;
+    display: block;
+    }
+
+    nav ul {
+    padding: 0 10px;
+    display: inline-block;
+    justify-content: space-between;     
+    }
+
+    main{
+    width: 100%;
+    }
+
+    h1 {
+    position:absolute;
+    left: 5px;
+    bottom: -10px;
+    }
+
 
      .slider{
        display: none;
-   }
+    }
 }
 
 /* Comandos Importantes */
