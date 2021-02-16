@@ -195,3 +195,41 @@ footer{
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
+
+/*adaptando para celular*/
+@media screen and (max-width: 480px){
+    nav {
+        position: static;
+        display: block;
+    }
+
+    nav ul {
+        padding: 0 10px;
+        display: inline-block;
+        justify-content: space-between;
+    }
+    
+    .caixa, .jogos, .jogos li, .mapa{
+        width: auto;
+        height: auto;
+    }
+    
+    main{
+        width: auto;
+      
+    }
+
+    h1 {
+        text-align: center;
+    }
+ 
+    nav {
+        position: static;
+        display: block;
+    }
+ 
+      .slider{
+        display: none;
+    }
+
+}
