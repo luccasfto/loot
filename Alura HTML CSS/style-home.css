@@ -237,6 +237,25 @@ footer{
     font-family: 'Press Start 2P', cursive;
 }
 
+/*adaptando para celular*/
+@media screen and (max-width: 480px){
+   .caixa, .principal, .loot, .jogos{
+       width: auto;
+   }
+   
+   h1 {
+       text-align: center;
+   }
+
+   nav {
+       position: static;
+       display: block;
+   }
+
+     .slider{
+       display: none;
+   }
+}
 
 /* Comandos Importantes */
 
