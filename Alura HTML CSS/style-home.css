@@ -271,7 +271,10 @@ footer{
     left: 5px;
     bottom: -10px;
     }
-
+    
+    .principal{
+        height: 35%;
+    }
 
      .slider{
        display: none;
