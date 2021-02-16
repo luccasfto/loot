@@ -28,13 +28,13 @@ nav {
 }
 nav li{
     display: inline-block;
-    margin: 0 200px 0 100px;
+    padding: 0 150px;
+    /*margin: 0 200px 0 100px;*/
     justify-content: space-between;
 }
 nav a{
     text-transform: uppercase;
     color: #999999;
-    /*font: 16px HalisR-bold, Roboto, Arial, sans-serif;*/
     font-family: 'Press Start 2P', cursive;
     font-weight: bold;
     font-size: 20px;
@@ -196,6 +196,7 @@ footer{
     font-family: 'Press Start 2P', cursive;
 }
 
+
 /*adaptando para celular*/
 @media screen and (max-width: 480px){
     nav {
@@ -206,30 +207,23 @@ footer{
     nav ul {
         padding: 0 10px;
         display: inline-block;
-        justify-content: space-between;
+        justify-content: space-between;     
     }
     
-    .caixa, .jogos, .jogos li, .mapa{
-        width: auto;
-        height: auto;
+    .caixa, .jogos, .jogos li, .jogos img, .mapa{
+        width: 90%;
+        height: 10%;
     }
     
     main{
-        width: auto;
-      
+        width: 100%;
     }
 
+
     h1 {
-        text-align: center;
-    }
- 
-    nav {
-        position: static;
-        display: block;
-    }
- 
-      .slider{
-        display: none;
+        position:absolute;
+        left: 5px;
+        bottom: -10px;
     }
 
 }
